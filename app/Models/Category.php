@@ -20,6 +20,7 @@ class Category extends Model
      */
     protected $fillable = [
         'name',
+        'gasdsga',
     ];
 
     public function items(): HasMany
