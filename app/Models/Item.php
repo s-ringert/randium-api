@@ -20,7 +20,7 @@ class Item extends Model
      */
     protected $fillable = [
         'name',
-        'category_id'
+        'category_id',
     ];
 
     public function category(): HasOne

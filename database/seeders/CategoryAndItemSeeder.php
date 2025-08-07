@@ -19,7 +19,7 @@ class CategoryAndItemSeeder extends Seeder
         DB::table('categories')->insert(
             [
                 'id' => $uuid,
-                'name' => 'Emotions'
+                'name' => 'Emotions',
             ]);
         DB::table('items')->insert(
             [
@@ -55,9 +55,8 @@ class CategoryAndItemSeeder extends Seeder
         DB::table('categories')->insert(
             [
                 'id' => $uuid,
-                'name' => 'Locations'
+                'name' => 'Locations',
             ]);
-
 
         Item::insert(
             [
@@ -89,12 +88,11 @@ class CategoryAndItemSeeder extends Seeder
             ]
         );
 
-
         $uuid = $faker->uuid();
         DB::table('categories')->insert(
             [
                 'id' => $uuid,
-                'name' => 'Jobs'
+                'name' => 'Jobs',
             ]);
         DB::table('items')->insert(
             [[
