@@ -8,13 +8,13 @@ use Illuminate\Console\Command;
 class CreateTokenCommand extends Command
 {
     /** @var int */
-    protected $signature = 'create:token {user}';
+    protected $signature = 'create:token {userId}';
 
     protected $description = 'Command description';
 
     public function handle(): void
     {
-        $user = User::find($this->argument('user'));
+        $user = User::find($this->argument('userId'));
         $token = $user->createToken('bearer');
         $this->info($token->plainTextToken);
     }
