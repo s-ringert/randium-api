@@ -7,14 +7,15 @@ use Illuminate\Console\Command;
 
 class CreateTokenCommand extends Command
 {
-    /** @var int */
+    /** @var string */
     protected $signature = 'create:token {userId}';
 
     protected $description = 'Command description';
 
     public function handle(): void
     {
-        $user = User::find($this->argument('userId'));
+        /** @var User */
+        $user = User::find((int) $this->argument('userId'));
         $token = $user->createToken('bearer');
         $this->info($token->plainTextToken);
     }

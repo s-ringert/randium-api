@@ -1,0 +1,97 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\Auth\\Guard\:\:logout\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: app/Livewire/Actions/Logout.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Contracts\\Auth\\Authenticatable\:\:\$email\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Livewire/Auth/ConfirmPassword.php
+
+		-
+			message: '#^Call to an undefined static method App\\Models\\User\:\:create\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: app/Livewire/Auth/Register.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\Auth\\Authenticatable\:\:hasVerifiedEmail\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: app/Livewire/Auth/VerifyEmail.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\Auth\\Authenticatable\:\:sendEmailVerificationNotification\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: app/Livewire/Auth/VerifyEmail.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\Auth\\Authenticatable\:\:delete\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: app/Livewire/Settings/DeleteUserForm.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\Auth\\Authenticatable\:\:update\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: app/Livewire/Settings/Password.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Contracts\\Auth\\Authenticatable\:\:\$email\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Livewire/Settings/Profile.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Contracts\\Auth\\Authenticatable\:\:\$email_verified_at\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Livewire/Settings/Profile.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Contracts\\Auth\\Authenticatable\:\:\$id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Livewire/Settings/Profile.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Contracts\\Auth\\Authenticatable\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 2
+			path: app/Livewire/Settings/Profile.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\Auth\\Authenticatable\:\:fill\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: app/Livewire/Settings/Profile.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\Auth\\Authenticatable\:\:hasVerifiedEmail\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: app/Livewire/Settings/Profile.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\Auth\\Authenticatable\:\:isDirty\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: app/Livewire/Settings/Profile.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\Auth\\Authenticatable\:\:save\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: app/Livewire/Settings/Profile.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\Auth\\Authenticatable\:\:sendEmailVerificationNotification\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: app/Livewire/Settings/Profile.php

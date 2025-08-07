@@ -16,6 +16,12 @@ sail artisan migrate:fresh --seed
 sail artisan make:filament-user
 sail artisan create:token 1
 ```
+
+# CI
+## check local
+```shell
+sail composer check
+```
 # TODO
 - filament category
 - filament items
