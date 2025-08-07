@@ -14,8 +14,9 @@ return new class extends Migration
         Schema::create('items', function (Blueprint $table) {
             $table->uuid('id')->primary();
             $table->uuid('category_id');
-            $table->string('name')->unique();
+            $table->string('name')->index();
             $table->foreign('category_id')->references('id')->on('categories');
+            $table->unique(['category_id', 'name']);
 
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();

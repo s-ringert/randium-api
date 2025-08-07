@@ -17,12 +17,14 @@ sail artisan make:filament-user
 sail artisan create:token 1
 ```
 
+# Start Application
+```
+sail up -d
+sail artisan queue:listen
+```
+
 # CI
 ## check local
 ```shell
 sail composer check
 ```
-# TODO
-- filament category
-- filament items
-- filament user
