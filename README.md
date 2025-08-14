@@ -31,4 +31,8 @@ sail composer check
 
 # Example Architecture
 ![img.png](img.png)
+
 # Todo
+- SQS Queue
+- Queue Worker
+- Logging to cloudwatch
